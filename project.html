@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlidate Login Form</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="label">SIGN UP</h1>
+        <form class="login_form" method="post" name="form" action="submit.html" onsubmit="return validate()">
+            <div class="font">Full Name</div>
+            <input autocomplete="off" type="text" name="Name">
+            <div id="Name_error">Please fill up this section</div>
+            <div class="font">Email or phone</div>
+        <input type="text" name="email">
+        <div id="email_error">Please fill up this section</div>
+        <div class="font font2">Password</div>
+        <input type="password" name="password">
+        <div id="password_error">Please fill up this section</div>
+        <div class="font font3">Confirm Password</div>
+        <input type="password" name="confirm_password">
+        <div id="confirm_password_error">Please fill up this section</div>
+        <button type="submit">SUBMIT</button>
+    </form>
+    </div>
+    <script src="project.js">
+    </script>
+</body>
+</html>
